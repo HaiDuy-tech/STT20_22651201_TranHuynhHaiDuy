@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Web của HaDy</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="./asset/css/bootstrap.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="./asset/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="./asset/css/responsive.css" rel="stylesheet" />
+    <link rel="icon" type="img/gif" href="./asset/img/logoicon.jpg">
+    <style>
+        .info_section {
+            margin-top: 5px;
+        }
+        
+        #nav {
+            margin-left: 10px;
+        }
+        
+        .container a:hover {
+            color: red;
+        }
+        
+        .hero_area {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        .footer {
+            background-color: #000;
+            /* Màu nền đen */
+            color: #fff;
+            /* Màu chữ trắng */
+            padding: 30px;
+        }
+        
+        .footer-wrap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            margin-right: 30px;
+        }
+        
+        .footer-section h3 {
+            color: #ccc;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #aaa;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+        }
+        
+        .footer-section a:hover {
+            color: red;
+        }
+        
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #666;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        
+        .search-box input[type="text"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: transparent;
+            padding: 5px;
+        }
+        
+        .search-box button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+        
+        .footer-copyright h4 {
+            font-size: 20px;
+        }
+        
+        .footer-copyright a {
+            text-decoration: none;
+            color: yellow;
+            font-size: 20px;
+        }
+        
+        .footer-copyright a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container d-block">
+                    <div class="main_nav_menu">
+                        <div class="fk_width">
+                            <div class="custom_menu-btn">
+                                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+                            </div>
+                            <div id="myNav" class="overlay">
+                                <div class="overlay-content">
+                                    <a class="" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                                    <a class="" href="type.html">Sản phẩm </a>
+                                    <a class="" href="lienhe.html">Liên hệ </a>
+                                    <a class="" href="gioithieu.html">Giới thiệu</a>
+                                    <a class="" href="auth_form.html">Đăng nhập </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="navbar-brand" href="index.html">
+                            <span><a href="index.html" class="logo-link"><img src="./asset/img/logo.png" alt="" width="100px" height="50px" style="margin-left: 0px; margin-top: 0px;"></a>
+              </span>
+                        </a>
+                        <div class="user_option">
+                            <a href="auth_form.html">
+                login
+              </a>
+                            <form class="form-inline ">
+                                <button class="btn  nav_search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <!-- slider section -->
+        <section class=" slider_section position-relative">
+            <div class="container-fluid">
+                <div class="row slider-row">
+                    <div class="col-lg-3 offset-lg-1">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Welcome to Web <br>
+                                        </h1>
+                                        <p>
+                                            Khám Phá Thế Giới Qua Ống Kính: Nơi Những Khoảnh Khắc Đẹp Nhất Được Ghi Lại!
+                                            <br>
+                                            <br>
+                                        </p>
+                                        <div>
+                                            <a href="index.html">
+                        Mua sắm ngay
+                      </a> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Nếu bạn chưa có tài khoản
+                                        </h1>
+                                        <p>
+                                            Hãy đăng kí ngay tại đây
+                                        </p>
+                                        <div>
+                                            <a href="auth_form.html">
+                        Đăng kí 
+                      </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel_control-box">
+                                <div class="carousel_btn-container">
+                                    <a class="carousel-control-prev-icon" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next-icon" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active li_one">01</li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="li_two">02</li>
+                                    <li class="ol_design"></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 px-0">
+                        <div class="img-box">
+                            <img src="./asset/img/slider-img.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider section -->
+    </div>
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                Giới thiệu máy ảnh
+                            </h2>
+                            <p>
+                            </p>
+                            <a href="index.html">
+                Xem chi tiết
+              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <div class="play_btn">
+                <a href="./asset/img/video1.mp4">
+                    <img src="./asset/img/play.png" alt="" />
+                </a>
+            </div>
+            <img src="./asset/img/about-img.png" class="about-img" alt="" />
+        </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- gallery section -->
+    <section class="gallery_section layout_padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <div class="heading_container">
+                        <h2>
+                            Tác phẩm qua ống kính
+                        </h2>
+                        <p>
+                            Mở ra một góc nhìn mới, nơi những khoảnh khắc bình dị được ghi lại một cách tinh tế và sống động, truyền tải cảm xúc và câu chuyện ẩn sâu trong từng bức ảnh
+                        </p>
+                        <a href="">
+              See More
+            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery_container">
+            <div class="gallery_bg">
+                <img src="./asset/img/gallery-bg.png" alt="" />
+            </div>
+            <div class="container">
+                <div class="gallery_box">
+                    <div class="box b1">
+                        <div class="img-box">
+                            <img src="./asset/img/gallery-1.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="box b2">
+                        <div class="img-box">
+                            <img src="./asset/img/gallery-2.jpg" alt="" />
+                        </div>
+                        <div class="img-box">
+                            <img src="./asset/img/gallery-3.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="box b3">
+                        <div class="img-box">
+                            <img src="./asset/img/gallery-4.jpg" alt="" />
+                        </div>
+                        <div class="img-box">
+                            <img src="./asset/img/gallery-5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="box b4">
+                        <div class="img-box">
+                            <img src="./asset/img/gallery-6.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end gallery section -->
+
+    <!-- blog section -->
+
+    <section class="blog_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                Blog mới nhất
+                            </h2>
+                            <p>
+                                Nơi chúng tôi chia sẻ những câu chuyện sống động và cảm xúc qua những bức ảnh được ghi lại bằng máy ảnh kỹ thuật số, mang đến cho bạn cái nhìn sâu sắc về thế giới xung quanh!
+                            </p>
+                            <a href="index.html">
+                                Sở hữu những bức ảnh đẹp
+              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog_container">
+            <div class="blog_bg">
+                <img src="./asset/img/gallery-bg.png" alt="" />
+            </div>
+            <div class="container">
+                <div class="blog_box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box b1">
+                                <div class="img-box">
+                                    <img src="./asset/img/blog1.jpg" alt="" />
+                                </div>
+                                <div class="blog-detail">
+                                    <div class="blog_title">
+                                        <h5>
+                                            Best photography
+                                        </h5>
+                                        <div class="blog_post">
+                                            <h6>
+                                                Post By: Pic studio
+                                            </h6>
+                                            <h6>
+                                                16-01-2020
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Mỗi bức ảnh tôi chụp không chỉ đơn thuần là hình ảnh, mà còn là những kỷ niệm và cảm xúc sống động, ghi lại những khoảnh khắc tôi cảm thấy gần gũi hơn với thiên nhiên và cuộc sống xung quanh.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box b2">
+                                <div class="img-box">
+                                    <img src="./asset/img/blog2.jpg" alt="" />
+                                </div>
+                                <div class="blog-detail">
+                                    <div class="blog_title">
+                                        <h5>
+                                            Photography
+                                        </h5>
+                                        <div class="blog_post">
+                                            <h6>
+                                                Post By: Pic studio
+                                            </h6>
+                                            <h6>
+                                                16-01-2020
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Hãy cùng khám phá vẻ đẹp mê hồn của thiên nhiên qua những bức ảnh tuyệt đẹp, từ những cánh đồng hoa rực rỡ đến những cảnh hoàng hôn lãng mạn, để mỗi khoảnh khắc đều trở thành kỷ niệm khó quên!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end blog section -->
+
+    <!-- client section -->
+
+    <!-- <section class="client_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <div class="heading_container">
+                        <h2>
+                            What Says Customer
+                        </h2>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="client_container">
+            <div class="client_bg">
+                <img src="./asset/img/gallery-bg.png" alt="" />
+            </div>
+            <div class="container">
+                <div class="client_box">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="box b1">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="client_content-box layout_padding">
+                                                <div class="img-box">
+                                                    <img src="./asset/img/client.png" alt="" />
+                                                </div>
+                                                <div class="detail-box">
+                                                    <h4>
+                                                        Plio Dorak
+                                                    </h4>
+                                                    <p>
+                                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page
+                                                        when looking at its layout. The point of using Lorem Ipsum
+                                                    </p>
+                                                    <img src="./asset/img/quote.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="client_content-box layout_padding">
+                                                <div class="img-box">
+                                                    <img src="./asset/img/client.png" alt="" />
+                                                </div>
+                                                <div class="detail-box">
+                                                    <h4>
+                                                        Plio Dorak
+                                                    </h4>
+                                                    <p>
+                                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page
+                                                        when looking at its layout. The point of using Lorem Ipsum
+                                                    </p>
+                                                    <img src="./asset/img/quote.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="client_content-box layout_padding">
+                                                <div class="img-box">
+                                                    <img src="./asset/img/client.png" alt="" />
+                                                </div>
+                                                <div class="detail-box">
+                                                    <h4>
+                                                        Plio Dorak
+                                                    </h4>
+                                                    <p>
+                                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page
+                                                        when looking at its layout. The point of using Lorem Ipsum
+                                                    </p>
+                                                    <img src="./asset/img/quote.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="box b2">
+                                <div class="camera_img-box">
+                                    <img src="./asset/img/camera.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- end client section -->
+
+    <!-- info section -->
+
+    <!-- <section class="info_section ">
+        <div class="info_container layout_padding-top">
+            <div class="container">
+                <div class="heading_container">
+                    <h2>
+                        Contact Us
+                    </h2>
+                </div>
+                <div class="info_main">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="info_contact ">
+                                <a href="#" class="link-box">
+                                    <div class="img-box">
+                                        <img src="./asset/img/location.png" alt="" />
+                                    </div>
+                                    <div class="detail-box">
+                                        <h6>
+                                            111 đường số 14 , P8, Gò Vấp, TP.HCM
+                                        </h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="link-box">
+                                    <div class="img-box">
+                                        <img src="./asset/img/mail.png" alt="" />
+                                    </div>
+                                    <div class="detail-box">
+                                        <h6>
+                                            tranhuynhhaiduy04@gmail.com
+                                        </h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="link-box">
+                                    <div class="img-box">
+                                        <img src="./asset/img/call.png" alt="" />
+                                    </div>
+                                    <div class="detail-box">
+                                        <h6>
+                                            Call +01 1234567890
+                                        </h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-3">
+                            <div class="info_link-box">
+                                <ul id="nav">
+                                    <li class=" ">
+                                        <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="type.html">Sản phẩm</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="lienhe.html">Liên hệ </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="gioithieu.html">Giới thiệu </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="auth_form.html">Đăng nhập </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <!-- <footer class="footer_section ">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> Trang web được thực hiện bới :
+                <a href="gioithieu.html">Trần Huỳnh Hải Duy</a>
+            </p>
+        </div>
+    </footer> -->
+    <!-- footer section -->
+    <footer class="footer">
+        <section class="footer-wrap">
+            <!-- Cột 1: Tìm cửa hàng -->
+            <div class="footer-section">
+                <h3>Tìm cửa hàng</h3>
+                <div class="search-box">
+                    <span>📍</span>
+                    <input type="text" placeholder="Nhập vị trí của bạn">
+                    <button>Tìm kiếm</button>
+                </div>
+                <a href="#">Xem danh sách cửa hàng</a>
+                <iframe style="width: 100%;height:50%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5864789850575!2d106.64549547480593!3d10.842924089309939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529996c5248ab%3A0x320242a204cb20b7!2zMTExIMSQxrDhu51uZyBz4buRIDE0LCBQaMaw4budbmcgOCwgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1730559295349!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Cột 2: Hỗ trợ trực tuyến -->
+            <div class="footer-section">
+                <h3>Hỗ trợ trực tuyến</h3>
+                <a href="#">Hỗ trợ trực tuyến</a>
+                <a href="#">Mạng lưới sửa chữa</a>
+                <a href="#">Biểu phí tiền công sửa chữa</a>
+                <a href="#">Kiểm tra thời hạn bảo hành</a>
+                <a href="#">Chính sách bảo hành</a>
+            </div>
+
+            <!-- Cột 3: Trải nghiệm -->
+            <div class="footer-section">
+                <h3>Trải nghiệm</h3>
+                <a href="#">Mua hàng trực tuyến</a>
+                <a href="#">Sony Alpha Facebook</a>
+                <a href="#">Sony Vietnam Facebook</a>
+                <a href="#">Kênh bán hàng theo dự án</a>
+                <a href="#">Câu hỏi thường gặp My Sony Rewards</a>
+                <a href="#">Điều kiện và điều khoản My Sony Rewards</a>
+            </div>
+
+            <!-- Cột 4: Tin tức & Thông tin -->
+            <div class="footer-section">
+                <h3>Tin tức & Thông tin</h3>
+                <a href="#">Tin tức</a>
+                <a href="#">Cam kết về môi trường</a>
+                <a href="#">Xem chương trình khuyến mãi</a>
+            </div>
+        </section>
+        <section class="footer-copyright">
+            <h4 id="copy" style="text-align: center;">Trang web được thực hiện bới : <a href="gioithieu.html">Trần Huỳnh Hải Duy</a></h4>
+        </section>
+    </footer>
+
+    <script src="./asset/js/jquery-3.4.1.min.js"></script>
+    <script src="./asset/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+</body>
+
+</html>
