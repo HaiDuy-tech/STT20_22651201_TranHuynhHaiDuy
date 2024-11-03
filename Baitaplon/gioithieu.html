@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header-nav.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/css/gioithieu.css">
+    <link rel="icon" type="img/gif" href="./asset/img/logoicon.jpg">
+    <style>
+        .header-wrap {
+            background-color: black;
+        }
+        
+        .header {
+            border-radius: 10px;
+        }
+        
+        .menu-item a {
+            color: white;
+        }
+        
+        .navbar {
+            background-color: black;
+            margin: 15px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+        }
+        
+        .content {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        .row {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        .container h3,
+        p {
+            font-size: 20px;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        .container img {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page">
+        <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <!-- Logo -->
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link"><img src="./asset/img/logo.png" alt="" width="50%" height="50%" style="margin-left: 50px; margin-top: 10px;"></a>
+                        </a>
+                    </section>
+
+                    <!-- Search bar -->
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm máy ảnh">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+
+                    <!-- Cart -->
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item menu-item-active" id="btnProfile">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+
+        <section class="room-details-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="room-details-item">
+                            <h2 style="margin-bottom:30px; color:rgb(57, 186, 230);">
+                                Chào mừng bạn đến với HaDy - Trần Huỳnh Hải Duy - 22651201
+                            </h2>
+                            <h3>Máy Ảnh Kỹ Thuật Số – Điểm đến hoàn hảo cho những tín đồ yêu thích nhiếp ảnh </h3> <br>
+                            <p style="text-align: justify;">
+                                Website của chúng tôi không chỉ cung cấp thông tin chi tiết về các dòng máy ảnh, ống kính và phụ kiện mà còn giúp bạn dễ dàng tìm kiếm, so sánh và đặt hàng trực tuyến. Hãy cùng khám phá thế giới nhiếp ảnh tuyệt vời với chúng tôi!
+
+                            </p>
+                            <img src="./asset/img/img1111.png" alt="" width="80%" height="10%">
+                            <p style="text-align: justify;">
+                                Trải nghiệm dễ dàng và tiện lợi tại website HaDy, bạn có thể: Tìm kiếm thông tin sản phẩm: Mỗi sản phẩm được giới thiệu chi tiết, kèm theo hình ảnh, mô tả tính năng và mức giá cụ thể để bạn dễ dàng lựa chọn. Khám phá phụ kiện và dịch vụ: Chúng tôi cung
+                                cấp thông tin về các phụ kiện cần thiết như ống kính, tripod, túi đựng máy ảnh, và dịch vụ sửa chữa – tất cả đều nhằm nâng cao trải nghiệm nhiếp ảnh của bạn. Đặt hàng trực tuyến: Hệ thống đặt hàng thân thiện và dễ sử dụng
+                                giúp bạn mua sắm nhanh chóng, nhận xác nhận ngay lập tức và tận hưởng các ưu đãi khi đặt hàng trực tiếp.
+                            </p>
+                            <img src="./asset/img/img3333.png" alt="" width="80%">
+                            <h3>Ưu đãi đặc biệt và thông tin hữu ích</h3>
+                            <p style="text-align: justify;">
+                                Ngoài thông tin sản phẩm, chúng tôi còn chia sẻ những bài viết hữu ích về nhiếp ảnh, mẹo sử dụng máy ảnh và các gợi ý về các khóa học nhiếp ảnh hấp dẫn. Tại đây, bạn có thể cập nhật những khuyến mãi đặc biệt, các sự kiện nhiếp ảnh và các buổi workshop
+                                thú vị để phát triển kỹ năng chụp hình của mình.
+                            </p>
+                            <img src="./asset/img/img2222.png" alt="" width="80%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <footer class="footer">
+                <section class="footer-wrap">
+                    <!-- Cột 1: Tìm cửa hàng -->
+                    <div class="footer-section">
+                        <h3>Tìm cửa hàng</h3>
+                        <div class="search-box">
+                            <span>📍</span>
+                            <input type="text" placeholder="Nhập vị trí của bạn">
+                            <button>Tìm kiếm</button>
+                        </div>
+                        <a href="#">Xem danh sách cửa hàng</a>
+                        <iframe style="width: 100%;height:50%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5864789850575!2d106.64549547480593!3d10.842924089309939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529996c5248ab%3A0x320242a204cb20b7!2zMTExIMSQxrDhu51uZyBz4buRIDE0LCBQaMaw4budbmcgOCwgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1730559295349!5m2!1svi!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Cột 2: Hỗ trợ trực tuyến -->
+                    <div class="footer-section">
+                        <h3>Hỗ trợ trực tuyến</h3>
+                        <a href="#">Hỗ trợ trực tuyến</a>
+                        <a href="#">Mạng lưới sửa chữa</a>
+                        <a href="#">Biểu phí tiền công sửa chữa</a>
+                        <a href="#">Kiểm tra thời hạn bảo hành</a>
+                        <a href="#">Chính sách bảo hành</a>
+                    </div>
+
+                    <!-- Cột 3: Trải nghiệm -->
+                    <div class="footer-section">
+                        <h3>Trải nghiệm</h3>
+                        <a href="#">Mua hàng trực tuyến</a>
+                        <a href="#">Sony Alpha Facebook</a>
+                        <a href="#">Sony Vietnam Facebook</a>
+                        <a href="#">Kênh bán hàng theo dự án</a>
+                        <a href="#">Câu hỏi thường gặp My Sony Rewards</a>
+                        <a href="#">Điều kiện và điều khoản My Sony Rewards</a>
+                    </div>
+
+                    <!-- Cột 4: Tin tức & Thông tin -->
+                    <div class="footer-section">
+                        <h3>Tin tức & Thông tin</h3>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Cam kết về môi trường</a>
+                        <a href="#">Xem chương trình khuyến mãi</a>
+                    </div>
+                </section>
+                <section class="footer-copyright">
+                    <h4 id="copy" style="text-align: center;">Trang web được thực hiện bới : <a href="gioithieu.html">Trần Huỳnh Hải Duy</a></h4>
+                </section>
+            </footer>
+        </section>
+
+        <script src="./asset/js/index_currentuser.js"></script>
+        <script src="./asset/js/script_product.js"></script>
+        <script src="./asset/js/index_loadproduct.js"></script>
+        <script src="./asset/js/index_control.js"></script>
+</body>
+
+</html>

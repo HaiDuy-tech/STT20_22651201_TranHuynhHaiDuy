@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header-nav.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/css/auth_cart.css">
+    <link rel="icon" type="img/gif" href="./asset/img/logoicon.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .page {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-body {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        .header__logo .logo-link {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .header__search {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 50px;
+        }
+        
+        .search-btn {
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border-radius: 4px;
+            color: #8509749b;
+        }
+        
+        .navbar {
+            background-color: rgb(87, 171, 199);
+            height: 40px;
+            line-height: 40px;
+        }
+        
+        .navbar__menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu-item {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+        }
+        
+        .menu-item-link {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        .menu-item-link a {
+            padding: 10px;
+        }
+        /* .menu-item-link:hover {} */
+        
+        .content-body {
+            margin-top: 20px;
+        }
+        
+        .content-body h2 {
+            margin-bottom: 15px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form div {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="tel"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        button {
+            background-color: #8509749b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #8509749b;
+        }
+        
+        .content-body {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            /* Add a border around the form */
+            border-radius: 5px;
+            /* Rounded corners */
+            background-color: #f9f9f9;
+            /* Light background for the form */
+        }
+        
+        h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            /* Increased font size */
+            text-align: center;
+            /* Center the title */
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            /* Spacing between fields */
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            display: block;
+            /* Make label occupy the full width */
+        }
+        
+        input[type="text"],
+        input[type="tel"] {
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 100%;
+            /* Make inputs full width */
+            box-sizing: border-box;
+            /* Include padding and border in width */
+        }
+        
+        .submit-btn {
+            background-color: rgb(87, 171, 199);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            /* Make button full width */
+        }
+        
+        .submit-btn:hover {
+            background-color: darkblue;
+        }
+        
+        .page {
+            display: flex;
+            flex-direction: column;
+            min-height: 50vh;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .footer1 {
+            background-color: #000;
+            /* Màu nền đen */
+            color: #fff;
+            /* Màu chữ trắng */
+            padding: 30px;
+        }
+        
+        .footer-wrap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            margin-right: 30px;
+        }
+        
+        .footer-section h3 {
+            color: #ccc;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #aaa;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+        }
+        
+        .footer-section a:hover {
+            color: red;
+        }
+        
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #666;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        
+        .search-box input[type="text"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: transparent;
+            padding: 5px;
+        }
+        
+        .search-box button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+        
+        .header-wrap {
+            background-color: black;
+        }
+        
+        hr {
+            margin: 10px;
+        }
+        
+        .header {
+            border-radius: 10px;
+        }
+        
+        .navbar {
+            background-color: black;
+            margin: 15px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page">
+        <!-- <header class="header">
+            <section class="grid">
+                <section class="header-wrap"> -->
+        <!-- Logo -->
+        <!-- <section class="header__logo mx-auto">
+                        <h3> <a href="index.html" class="logo-link mx-auto"> HADY </a></h3>
+
+                    </section> -->
+        <!-- Search bar -->
+        <!-- <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm chiếc máy ảnh bạn yêu thích">
+                            <button class="search-btn" onclick="searchProduct()">Tìm kiếm chiếc máy ảnh bạn yêu thích</button>
+                            <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section> -->
+
+        <!-- Cart -->
+        <!-- <section class="header__cart">
+                        <section class="cart-wrap menu-item-active">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section> -->
+        <!-- <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label> -->
+        <!-- </section>
+            </section>
+        </header> -->
+        <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <!-- Logo -->
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link"><img src="./asset/img/logo.png" alt="" width="70%" height="70%" style="margin-left: 50px; margin-top: 10px;"></a>
+                        </a>
+                    </section>
+
+                    <!-- Search bar -->
+                    <!-- <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm máy ảnh ">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section> -->
+
+                    <!-- Cart -->
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item" id="btnProfile">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display:none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+
+        <div class="content-body">
+            <h2>Thông tin thanh toán</h2>
+            <form id="payment-form" onsubmit="return handlePayment(event)">
+                <div class="form-group">
+                    <label for="fullname">Họ tên:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ giao hàng:</label>
+                    <input type="text" id="address" name="address" required placeholder="Nhập địa chỉ giao hàng">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+                </div>
+                <button type="submit" class="submit-btn">Xác nhận thanh toán</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer1">
+        <section class="footer-wrap">
+            <!-- Cột 1: Tìm cửa hàng -->
+            <div class="footer-section">
+                <h3>Tìm cửa hàng</h3>
+                <div class="search-box">
+                    <span>📍</span>
+                    <input type="text" placeholder="Nhập vị trí của bạn">
+                    <button>Tìm kiếm</button>
+                </div>
+                <a href="#">Xem danh sách cửa hàng</a>
+                <iframe style="width: 100%;height:50%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5864789850575!2d106.64549547480593!3d10.842924089309939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529996c5248ab%3A0x320242a204cb20b7!2zMTExIMSQxrDhu51uZyBz4buRIDE0LCBQaMaw4budbmcgOCwgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1730559295349!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Cột 2: Hỗ trợ trực tuyến -->
+            <div class="footer-section">
+                <h3>Hỗ trợ trực tuyến</h3>
+                <a href="#">Hỗ trợ trực tuyến</a>
+                <a href="#">Mạng lưới sửa chữa</a>
+                <a href="#">Biểu phí tiền công sửa chữa</a>
+                <a href="#">Kiểm tra thời hạn bảo hành</a>
+                <a href="#">Chính sách bảo hành</a>
+            </div>
+
+            <!-- Cột 3: Trải nghiệm -->
+            <div class="footer-section">
+                <h3>Trải nghiệm</h3>
+                <a href="#">Mua hàng trực tuyến</a>
+                <a href="#">Sony Alpha Facebook</a>
+                <a href="#">Sony Vietnam Facebook</a>
+                <a href="#">Kênh bán hàng theo dự án</a>
+                <a href="#">Câu hỏi thường gặp My Sony Rewards</a>
+                <a href="#">Điều kiện và điều khoản My Sony Rewards</a>
+            </div>
+
+            <!-- Cột 4: Tin tức & Thông tin -->
+            <div class="footer-section">
+                <h3>Tin tức & Thông tin</h3>
+                <a href="#">Tin tức</a>
+                <a href="#">Cam kết về môi trường</a>
+                <a href="#">Xem chương trình khuyến mãi</a>
+            </div>
+        </section>
+        <section class="footer-copyright">
+            <h4 id="copy" style="text-align: center;">Trang web được thực hiện bới : <a href="gioithieu.html">Trần Huỳnh Hải Duy</a></h4>
+        </section>
+    </footer>
+
+
+
+    <script src="./asset/js/index_currentuser.js"></script>
+    <script src="./asset/js/index_control.js"></script>
+    <script src="./asset/js/index_loadcart.js"></script>
+    <script>
+        // Hàm xử lý thanh toán
+        function handlePayment(event) {
+            event.preventDefault(); // Ngăn chặn hành động gửi form mặc định
+
+            const fullname = document.getElementById('fullname').value;
+            const address = document.getElementById('address').value;
+            const phone = document.getElementById('phone').value;
+
+            alert(`Thanh toán thành công!\nHọ tên: ${fullname}\nĐịa chỉ: ${address}\nĐiện thoại: ${phone}`);
+
+        }
+
+        // Gọi hàm để cập nhật giá trị tổng tiền
+        window.onload = function() {
+            const totalPrice = localStorage.getItem('totalPrice') || '0 đ'; // Lấy giá trị tổng từ localStorage
+            const total = localStorage.getItem('total') || '0 đ';
+            document.getElementById('totalprice').innerText = totalPrice;
+            document.getElementById('total').innerText = total;
+        };
+    </script>
+</body>
+
+</html>
