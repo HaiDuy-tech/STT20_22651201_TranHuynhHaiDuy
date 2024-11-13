@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi ý kiến phản hồi</title>
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header-nav.css">
+    <link rel="stylesheet" href="./asset/css/lienhe.css">
+    <link rel="icon" type="img/gif" href="./asset/img/logoicon.jpg">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <style>
+        .page {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .header-wrap {
+            background-color: black;
+        }
+        
+        .header {
+            border-radius: 10px;
+        }
+        
+        .navbar {
+            background-color: black;
+            margin: 15px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+            padding: 0px;
+        }
+        
+        #nav1 {
+            padding-left: 672px;
+            color: white;
+        }
+        
+        .menu-item-link {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        
+        .footer a {
+            text-decoration: none;
+        }
+        
+        .menu-item.menu-item-active a {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page">
+        <!-- <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                 
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link"><img src="./asset/img/logo.png" alt="" width="50%" height="50%" style="margin-left: 50px; margin-top: 10px;"></a>
+
+                    </section>
+
+                  
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm máy ảnh ">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+
+              
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item menu-item-active">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item" id="btnProfile">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav> -->
+        <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <!-- Logo -->
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link"><img src="./asset/img/logo.png" alt="" width="50%" height="50%" style="margin-left: 50px; margin-top: 10px;"></a>
+
+                    </section>
+
+                    <!-- Search bar -->
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm máy ảnh ">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+
+                    <!-- Cart -->
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu" id="nav1">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link menu-item-active">Liên hệ</a>
+                </li>
+                <li class="menu-item" id="btnProfile">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <section class="auth">
+                <section class="auth__header">
+                    <h2>Gửi ý kiến phản hồi</h2>
+                </section>
+                <div id="successMessage" class="alert alert-success" style="display: none;" role="alert">
+                    Thông điệp của bạn đã được gửi thành công!
+                </div>
+                <form class="auth__form" name="sentMessage" id="contactForm" onsubmit="handleSubmit(event);">
+                    <div class="form-group">
+                        <label for="username">Tên của bạn</label>
+                        <input class="form-control" type="text" id="usernameL" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input class="form-control" type="email" id="Email" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Review">Ý kiến của bạn</label>
+                        <textarea class="form-control" name="Review" id="Review" cols="5" required></textarea>
+
+                    </div>
+                    <button class="auth_btn" id="sendMessageButton">Gửi phản hồi</button>
+                </form>
+                <p>Bạn có thể tìm hiểu thêm về chúng tôi tại <a href="gioithieu.html"><span style="color: red">đây.</span></a></p>
+            </section>
+            <div class="col-lg-5 mb-5">
+                <div class="bg-light p-30 mb-30">
+                    <!-- <iframe style="width: 120%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0233667848215!2d106.66432737480531!3d10.809522089341225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752923089d6da5%3A0x8fef2b17d7d02dcb!2zMjJCIMSQLiBMYW0gU8ahbiwgUGjGsOG7nW5nIDIsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1730551591321!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> GOOGLE MAP</https:> -->
+                    <iframe style="width: 120%;height:330px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5864789850575!2d106.64549547480593!3d10.842924089309939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529996c5248ab%3A0x320242a204cb20b7!2zMTExIMSQxrDhu51uZyBz4buRIDE0LCBQaMaw4budbmcgOCwgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1730559295349!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="bg-light p-30 mb-3">
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i> 111 đường só 14, Phường 8, Gò Vấp, TPHCM</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>tranhuynhhaiduy04@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+9 123 456 789</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <section class="footer-wrap">
+                <!-- Cột 1: Tìm cửa hàng -->
+                <div class="footer-section">
+                    <h3>Tìm cửa hàng</h3>
+                    <div class="search-box">
+                        <span>📍</span>
+                        <input type="text" placeholder="Nhập vị trí của bạn">
+                        <button>Tìm kiếm</button>
+                    </div>
+                    <a href="#">Xem danh sách cửa hàng</a>
+                    <iframe style="width: 100%;height:50%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5864789850575!2d106.64549547480593!3d10.842924089309939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529996c5248ab%3A0x320242a204cb20b7!2zMTExIMSQxrDhu51uZyBz4buRIDE0LCBQaMaw4budbmcgOCwgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1730559295349!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Cột 2: Hỗ trợ trực tuyến -->
+                <div class="footer-section">
+                    <h3>Hỗ trợ trực tuyến</h3>
+                    <a href="#">Hỗ trợ trực tuyến</a>
+                    <a href="#">Mạng lưới sửa chữa</a>
+                    <a href="#">Biểu phí tiền công sửa chữa</a>
+                    <a href="#">Kiểm tra thời hạn bảo hành</a>
+                    <a href="#">Chính sách bảo hành</a>
+                </div>
+
+                <!-- Cột 3: Trải nghiệm -->
+                <div class="footer-section">
+                    <h3>Trải nghiệm</h3>
+                    <a href="#">Mua hàng trực tuyến</a>
+                    <a href="#">Sony Alpha Facebook</a>
+                    <a href="#">Sony Vietnam Facebook</a>
+                    <a href="#">Kênh bán hàng theo dự án</a>
+                    <a href="#">Câu hỏi thường gặp My Sony Rewards</a>
+                    <a href="#">Điều kiện và điều khoản My Sony Rewards</a>
+                </div>
+
+                <!-- Cột 4: Tin tức & Thông tin -->
+                <div class="footer-section">
+                    <h3>Tin tức & Thông tin</h3>
+                    <a href="#">Tin tức</a>
+                    <a href="#">Cam kết về môi trường</a>
+                    <a href="#">Xem chương trình khuyến mãi</a>
+                </div>
+            </section>
+            <section class="footer-copyright">
+                <h4 id="copy" style="text-align: center;">Trang web được thực hiện bới : <a href="gioithieu.html">Trần Huỳnh Hải Duy</a></h4>
+            </section>
+        </footer>
+    </section>
+
+    <script src="./asset/js/index_currentuser.js"></script>
+    <script src="./asset/js/index_control.js"></script>
+    <script src="./asset/js/contact.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Display success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Optionally reset the form fields
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+
+</html>

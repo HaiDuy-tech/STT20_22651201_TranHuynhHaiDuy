@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loại sản phẩm</title>
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header-nav.css">
+    <link rel="stylesheet" href="./asset/css/dsSanpham.css">
+    <link rel="icon" type="img/gif" href="./asset/img/logoicon.jpg">
+    <style>
+        .header-wrap {
+            background-color: black;
+        }
+        
+        hr {
+            margin: 10px;
+        }
+        
+        .header {
+            border-radius: 10px;
+        }
+        
+        .navbar {
+            background-color: black;
+            margin: 15px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="page">
+        <!-- <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link"> <img src="./asset/img/logo.png" alt="" width="50%" height="50%" style="margin-left: 50px; margin-top: 10px;"></a>
+                        </a>
+                    </section>
+
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm máy ảnh ">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop menu-item-active">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav> -->
+        <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <!-- Logo -->
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link"><img src="./asset/img/logo.png" alt="" width="50%" height="50%" style="margin-left: 50px; margin-top: 10px;"></a>
+
+                    </section>
+
+                    <!-- Search bar -->
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input" id="searchProduct" placeholder="Tìm kiếm máy ảnh ">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+
+                    <!-- Cart -->
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="auth_cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <!-- <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link menu-item-active">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item" id="btnProfile">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav> -->
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop menu-item-active">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="type.html" id="TRADITIONAL">SONY</a>
+                        <a href="type.html" id="DESIGNED">CANON</a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="gioithieu.html" class="menu-item-link">Giới thiệu</a>
+                    <!-- Liên kết đến phần giới thiệu -->
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="auth_form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <section class="feature-dsSanpham">
+                <section class="heading">
+                    <h1 class="brand-title">LỰA CHỌN YÊU THÍCH</h1>
+                    <small>MẪU MÁY ẢNH NỔI BẬT</small>
+                </section>
+                <section class="grid">
+                    <section class="content-dsSanpham">
+                        <!-- <p>Bạn có thể tìm hiểu thêm về chúng tôi tại <a href="gioithieu.html"><span style="color:red">đây.</span></a></p> -->
+                    </section>
+                </section>
+            </section>
+            <section class="newsletter">
+                <p class="newsletter-title">ĐĂNG KÝ NHẬN EMAIL THÔNG BÁO KHUYẾN MẠI VÀ CÁC SẢN PHẨM MỚI </p>
+                <input type="text" name id="email_newsletter" placeholder="Nhập email hoặc số điện thoại của bạn">
+                <button class="newsletter-subs-btn"><a href="auth_form.html">Đăng ký ngay</a></button>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <section class="footer-wrap">
+                <!-- Cột 1: Tìm cửa hàng -->
+                <div class="footer-section">
+                    <h3>Tìm cửa hàng</h3>
+                    <div class="search-box">
+                        <span>📍</span>
+                        <input type="text" placeholder="Nhập vị trí của bạn">
+                        <button>Tìm kiếm</button>
+                    </div>
+                    <a href="#">Xem danh sách cửa hàng</a>
+                    <iframe style="width: 100%;height:50%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5864789850575!2d106.64549547480593!3d10.842924089309939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529996c5248ab%3A0x320242a204cb20b7!2zMTExIMSQxrDhu51uZyBz4buRIDE0LCBQaMaw4budbmcgOCwgR8OyIFbhuqVwLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1730559295349!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Cột 2: Hỗ trợ trực tuyến -->
+                <div class="footer-section">
+                    <h3>Hỗ trợ trực tuyến</h3>
+                    <a href="#">Hỗ trợ trực tuyến</a>
+                    <a href="#">Mạng lưới sửa chữa</a>
+                    <a href="#">Biểu phí tiền công sửa chữa</a>
+                    <a href="#">Kiểm tra thời hạn bảo hành</a>
+                    <a href="#">Chính sách bảo hành</a>
+                </div>
+
+                <!-- Cột 3: Trải nghiệm -->
+                <div class="footer-section">
+                    <h3>Trải nghiệm</h3>
+                    <a href="#">Mua hàng trực tuyến</a>
+                    <a href="#">Sony Alpha Facebook</a>
+                    <a href="#">Sony Vietnam Facebook</a>
+                    <a href="#">Kênh bán hàng theo dự án</a>
+                    <a href="#">Câu hỏi thường gặp My Sony Rewards</a>
+                    <a href="#">Điều kiện và điều khoản My Sony Rewards</a>
+                </div>
+
+                <!-- Cột 4: Tin tức & Thông tin -->
+                <div class="footer-section">
+                    <h3>Tin tức & Thông tin</h3>
+                    <a href="#">Tin tức</a>
+                    <a href="#">Cam kết về môi trường</a>
+                    <a href="#">Xem chương trình khuyến mãi</a>
+                </div>
+            </section>
+            <section class="footer-copyright">
+                <h4 id="copy" style="text-align: center;">Trang web được thực hiện bới : <a href="gioithieu.html">Trần Huỳnh Hải Duy</a></h4>
+            </section>
+        </footer>
+    </section>
+
+    <script src="./asset/js/index_currentuser.js"></script>
+    <script src="./asset/js/script_product.js"></script>
+    <script src="./asset/js/hang.js"></script>
+    <script src="./asset/js/index_control.js"></script>
+</body>
+
+</html>
