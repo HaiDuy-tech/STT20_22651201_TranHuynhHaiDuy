@@ -1,0 +1,244 @@
+.item-img {
+    /* Tỷ lệ tương đối với thẻ chứa nó padding: 100% 
+    hiểu là bằng chiều ngang của thẻ chứa nó */
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 10px 6px;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* -webkit-line-clamp: 2; */
+}
+
+.item-btn-wrap {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-add-cart {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.btn-add-cart i {
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+
+/* Featured products */
+
+.feature-dsSanpham .heading {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.heading h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+.heading small {
+    font-size: 13px;
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.content-dsSanpham {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* Newsletter subscrible */
+
+.newsletter {
+    margin-top: 60px;
+    text-align: center;
+    background: #313345;
+    padding: 20px 20px 40px;
+    color: #fafafa;
+}
+
+.newsletter p {
+    color: #eee;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+#email_newsletter {
+    width: 50%;
+    font-size: 12px;
+    padding-left: 15px;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-subs-btn {
+    width: 8rem;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: rgb(108, 181, 250);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #eee;
+    text-align: center;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-subs-btn:hover {
+    background-color: rgb(108, 181, 250);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .item {
+        width: 31.5%;
+        margin: 0 0.4rem 0.7rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .item {
+        width: 48%;
+        margin: 0 1% 12px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .item {
+        width: 98%;
+    }
+    .policy-label {
+        width: 100%;
+        border-right: none;
+    }
+    .policy {
+        height: fit-content;
+        justify-content: center;
+    }
+}
+
+.footer {
+    background-color: #000;
+    /* Màu nền đen */
+    color: #fff;
+    /* Màu chữ trắng */
+    padding: 30px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-section h3 {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #aaa;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+}
+
+.footer-section a:hover {
+    color: red;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #666;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.search-box input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.search-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+.header__logo a {
+    font-size: 50px;
+}
+
+.header-wrap {
+    background-color: lightblue;
+    height: 100px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.footer-copyright a:hover {
+    color: red;
+}
